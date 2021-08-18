@@ -1,0 +1,91 @@
+body{
+    font-family: "Open Sans";
+    margin: 0%;
+    padding:0%;
+}
+.main-menu{
+    display: flex;
+    padding: 300px 100px;
+    flex-wrap: wrap;
+}
+.startBoard{
+    background-color: greenyellow;
+    transition: 0.3s;
+}
+.startBoard > h3{
+    text-align: center;
+    padding-top: 20px;
+}
+.startBoard:hover{
+    cursor: pointer;
+    transform: scale(1.1);   
+}
+.CreateBoard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    background-color: greenyellow;
+}
+.create-board-head{
+    display: flex;
+    flex-direction: row;
+}
+.create-board-head > img{
+    margin: 20px 0 0 60px;
+    height: 25px;
+    width: 25px;
+}
+.create-board-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.create-board-main > input{
+    height: 30px;
+}
+.create-board-foot{
+    margin-top: 40px;
+    flex-direction: row;
+}
+.create-board-foot > button{
+    margin: 0 20px;
+    height: 50px;
+    width: 100px;
+}
+.boards-list{
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+.board{
+    margin: 50px 0 0 90px;
+    border: 2px solid green;
+    border-radius: 25px;
+    text-align: center;
+    transition: 0.2s;
+}
+.board > h3{
+    padding-top: 15px;
+}
+.board:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.board-size{
+    height: 100px;
+    width: 300px;
+}
+.red-x{
+    position: relative;
+    bottom: 70px;
+    right: -130px;
+    height: 25px;
+    width: 25px;
+    opacity: 0%;
+    transition: 0.5s;
+}
+.board:hover > .red-x{
+    opacity: 100%;
+}
